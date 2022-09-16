@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <title>Barberia Alura</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header-nav">
+                <a class="header-nav-logo" href="index.html"><img src="./imagenes/logo-blanco.png" alt="Logo"></a>
+                <ul class="header-nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>                                                                                                                                 
+                    <li><a href="contacto.html">contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form class="form">
+                <div class="form-container">
+                <label class=" form-title">Contactanos </label>
+            </div>
+                <div class="form-container">
+                    <div class="form-group">
+                <input type="text" id="nombreapellido" class="form-input" placeholder=" " >
+                <label for="nombreapellido" class="form-label">Nombre y Apellido</label>
+                <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="correoelectronico" class="form-input" placeholder=" " >
+                <label for="correoelectronico" class="form-label">Email</label>
+                    <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="telefono" class="form-input" placeholder=" ">
+                <label for="telefono" class="form-label">Teléfono</label>
+                    <span class="form-line"></span>
+            </div>
+       
+            <div class="form-group">
+                <textarea cols="50" rows="10" id="mensaje" class="form-txtarea" placeholder=" " required></textarea>
+                <label for="mensaje"  class="form-label" >Mensaje</label>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-questionContact">Cómo le gustaría que lo contactemos?</legend>
+
+                    <label class="form-questionContact-label" for="radio-email"><input class="form-questionContact-input" type="radio" name="contacto" value="email" id="radio-email" required>  Email</label>
+                    
+                    <label class="form-questionContact-label" for="radio-telefono"><input class="form-questionContact-input" type="radio" name="contacto" value="telefono" id="radio-telefono" required>  Teléfono</label>
+                    
+                    <label class="form-questionContact-label" for="radio-whatsapp"><input class="form-questionContact-input" type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" required> WhatsApp</label>
+                    
+                </fieldset>
+            </div>
+                <div class="form-group">
+                <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la Barbería Alura?</label>           --->     
+            </div>
+                <input type="submit" value="Enviar formulario" class="submit">
+            </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer class="footer">
+            <a href="index.html"> <img src="./imagenes/logo-blanco.png" alt="Logo Footer"></a>
+             <p class="footer-copyright">&copy Copyright Barberia Alura - 2022</p>
+         </footer>
+    </body>
+</html>
